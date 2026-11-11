@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: mymindstorm/setup-emsdk@v14
-      - run: emcc -lembind -O3 cipher.cpp -o cipher.js
+      - run: em++ -lembind -O3 cipher.cpp -o cipher.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
