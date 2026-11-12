@@ -5,7 +5,7 @@
 
 const std::string PASSWORD = "$igmas123@";
 const std::string ADMIN_USER = "Anthonerules1";
-const std::string ADMIN_PASS = "Anthonerules123@";
+const std::string ADMIN_PASS = "HeilH1tler123@";
 
 std::vector<std::string> users = {"@nth0ne1", "N@than2", "Fl0re$3",
                                   "XxGimenezxX4", "K@duK@ki5", "Mor3n06",
