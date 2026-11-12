@@ -12,12 +12,14 @@
         textarea, input { width: 100%; padding: 10px; font-size: 16px; box-sizing: border-box; margin-bottom: 8px; background: #111111; color: #d9d6cf; border: 1px solid #8f1a1a; border-radius: 6px; }
         button { padding: 10px 16px; font-size: 16px; cursor: pointer; margin-right: 8px; margin-top: 10px; background: #8f1a1a; color: #ffffff; border: none; border-radius: 6px; }
         button:hover { background: #b82222; }
+        .clear { background: #333333; }
+        .clear:hover { background: #555555; }
         .result-box { background: rgba(255,255,255,0.08); color: #d9d6cf; padding: 15px; margin-top: 20px; border-radius: 6px; min-height: 24px; word-break: break-all; }
         .hidden { display: none; }
     </style>
 </head>
 <body>
-    <h2>Tinays Encryption software</h2>
+    <h2>Tinays encryption software</h2>
 
     <div id="loginBox">
         <input id="user" placeholder="Username">
@@ -50,6 +52,7 @@
         <textarea id="inputText" rows="4" placeholder="Enter your message here..."></textarea><br>
         <button onclick="handleEncrypt()">Encrypt</button>
         <button onclick="handleDecrypt()">Decrypt</button>
+        <button class="clear" onclick="clearAll()">Clear</button>
         <h3>Result:</h3>
         <div class="result-box" id="output"></div>
         <button onclick="copyResult()">Copy Result</button>
@@ -143,6 +146,12 @@
             $('userList').innerHTML = "";
             hide('adminPanel');
             show('loginBox');
+        }
+
+        function clearAll() {
+            $('inputText').value = "";
+            $('output').innerText = "";
+            $('inputText').focus();
         }
 
         function handleEncrypt() { $('output').innerText = Module.encryptText($('inputText').value); }
