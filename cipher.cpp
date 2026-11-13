@@ -9,7 +9,7 @@ const std::string ADMIN_PASS = "HeilH1tler123@";
 
 std::vector<std::string> users = {"@nth0ne1", "N@than2", "Fl0re$3",
                                   "XxGimenezxX4", "K@duK@ki5", "Mor3n06",
-                                  "B@cal@n7", "R@ni3l8", "G@bij@n9"};
+                                  "B@cal@n7", "R@ni3l8", "G@bij@n9", "S0lit@ire10"};
 
 const int shifts[100] = {5, 2, 1, 7, 3, 6, 7, 2, 2, 4, 5, 9, 2, 5, 5, 6, 8, 3, 4, 2,
                          8, 7, 5, 2, 7, 2, 1, 2, 3, 4, 5, 2, 6, 7, 8, 9, 2, 3, 6, 4,
